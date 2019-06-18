@@ -1,7 +1,6 @@
 package com.whirlpool.windchillautomation.qa.testcases;
 
 import java.io.IOException;
-import java.util.logging.LogManager;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

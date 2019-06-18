@@ -1,23 +1,32 @@
 package com.whirlpool.windchillautomation.qa.objects;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class WCNewDocumentPageObjects {
+import com.whirlpool.windchillautomation.qa.base.DriverInitialization;
+
+public class WCNewDocumentPageObjects extends DriverInitialization {
+
+	public WCNewDocumentPageObjects() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	@FindBy(xpath="//button[text()='New Document']")
-	WebElement newDocumentButton;
+	protected WebElement newDocumentButton;
 
 	@FindBy(xpath="//select[@id='createType']")
-	WebElement docType;
+	protected WebElement docType;
 
 	@FindBy(xpath="//input[@id='primaryFilepathInput']")
-	WebElement primaryContent;
+	protected WebElement primaryContent;
 
 	@FindBy(xpath="//td[text()='Name:']/following-sibling::td[1]/input[1]")
-	WebElement docName;
+	protected WebElement docName;
 
 	@FindBy(xpath="//select[@id='DocOwnerGroup']") 
-	WebElement docOwnerGroup;
+	protected WebElement docOwnerGroup;
 
 }

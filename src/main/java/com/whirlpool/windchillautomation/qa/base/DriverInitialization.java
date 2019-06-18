@@ -21,7 +21,7 @@ public class DriverInitialization {
 		//C:\\Git_Workspaces\\WAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config
 		properties=new Properties();
 
-		FileInputStream fis = new FileInputStream("E:\\config.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\shinda1\\eclipse-workspace\\WFrame\\WindchillAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config\\config.properties");
 		try {
 			properties.load(fis);
 		} catch (FileNotFoundException e) {
