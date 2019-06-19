@@ -106,9 +106,9 @@ public class WCNewWtPartPage extends WCNewWtPartPageObjects{
 
 		populateAllWTPartAttribute().clickNextButton().partMfgDescription().clickFinishButton();
 		util.SwitchToParent();
-		FolderPage.ClickOnYellowBanner();
-
-		util.capturescreenshot(driver, partname);
+		String partNumber = FolderPage.ClickOnYellowBanner();
+		Thread.sleep(6000);
+		util.capturescreenshot(driver,partNumber);
 
 	}
 

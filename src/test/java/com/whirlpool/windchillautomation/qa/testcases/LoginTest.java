@@ -36,7 +36,7 @@ public class LoginTest extends DriverInitialization{
 	}
 
 	@Test
-	public void NewPart1() throws Exception{
+	public void NewPart() throws Exception{
 
 		PartPage= new WCNewWtPartPage();
 		PartPage.createNewPart();

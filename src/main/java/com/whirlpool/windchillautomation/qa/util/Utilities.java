@@ -46,12 +46,12 @@ public class Utilities extends DriverInitialization {
 			driver.switchTo().window(ParentWindow);
 		}
 	
-	/*public WebElement waitForElement(WebElement object, long wait_Time_Seconds) 
+	public WebElement waitForElement(WebElement object, long wait_Time_Seconds) 
 	{
 	    WebDriverWait wait = new WebDriverWait(driver,wait_Time_Seconds);
 	    wait.until(ExpectedConditions.elementToBeClickable(object));
 	    return object;
-	}	*/
+	}	
 	
 	public void capturescreenshot(WebDriver driver, String ScreenshotName) 
 	{
@@ -61,7 +61,7 @@ public class Utilities extends DriverInitialization {
 			     
 			     File source=ts.getScreenshotAs(OutputType.FILE);
 			     
-			     Files.copy(source, new File("./ScreenShots/"+ScreenshotName+".png"));
+			     Files.copy(source, new File("./screenshots/"+ScreenshotName+".png"));
 			     
 			     System.out.println("Screenshot Captured");
 		} catch (Exception e)

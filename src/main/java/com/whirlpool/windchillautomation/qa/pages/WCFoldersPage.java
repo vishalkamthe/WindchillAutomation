@@ -15,8 +15,11 @@ public class WCFoldersPage extends WCFoldersPageObjects {
 		return new WCNewWtPartPage();
 	}
 
-	public void ClickOnYellowBanner(){
+	public String ClickOnYellowBanner(){
+		String yellowBannerInfo= yellowBannerLink.getText();
+		String partNumber =  yellowBannerInfo.substring(7,16);
 		yellowBannerLink.click();
+		return partNumber;
 	}
 
 }

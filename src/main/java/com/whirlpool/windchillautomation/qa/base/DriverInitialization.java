@@ -21,7 +21,7 @@ public class DriverInitialization {
 		//C:\\Git_Workspaces\\WAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config
 		properties=new Properties();
 
-		FileInputStream fis = new FileInputStream("C:\\Users\\shinda1\\eclipse-workspace\\WFrame\\WindchillAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config\\config.properties");
+		FileInputStream fis = new FileInputStream("C:\\Git_Workspaces\\WindchillAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config\\config.properties");
 		try {
 			properties.load(fis);
 		} catch (FileNotFoundException e) {
@@ -61,7 +61,7 @@ public class DriverInitialization {
 			driver=new InternetExplorerDriver();
 
 		}
-		System.out.println("test");
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Utilities.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
